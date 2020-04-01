@@ -4,25 +4,6 @@
 font-family: 'Montserrat', sans-serif;
 */
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 450px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 400px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-
 body {
   color: #fcf8f3;
   background: rgb(104,132,118);
@@ -31,31 +12,25 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 16px;
 }
-
-img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-.title-style {
+h1, h2 {
   font-family: 'Montserrat', sans-serif;
   color: #ffaaa5;
 }
-
 h1 {
   font-size: 32px;
   line-height: 32px;
 }
-
 h2 {
   font-size: 24px;
   line-height: 16px;
 }
-
 p{
   line-height: 24px;
 }
-
+img {
+  width: 150px;
+  border-radius: 50%;
+}
 ul li {
   list-style: none;
   line-height: 16px;
@@ -63,10 +38,11 @@ ul li {
   padding: 16px;
   padding-inline-start: 0px;
 }
-
 a {
   color: #ffaaa5;
   text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 a:hover {
@@ -74,9 +50,9 @@ a:hover {
 }
 
 .container {
-  margin: 0 200px;
+  width: 700px;
+  margin: 40px auto;
 }
-
 .text-center {
   text-align: center;
 }
@@ -89,3 +65,24 @@ a:hover {
   margin: 16px auto 30px auto;
   padding: 30px;
 }
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
